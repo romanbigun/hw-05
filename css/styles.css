@@ -83,6 +83,7 @@ img {
     margin: 0;
 }
 .pages{
+    position: relative;
     display: block;
     font-weight: 500;
     font-size: 16px;
@@ -91,7 +92,17 @@ img {
     color:var(--navy-blye-color);
     padding-top: 24px;
     padding-bottom: 24px;
-
+    color: #404bbf; 
+    transition :250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+}
+.pages::after{
+    content: '' ;
+    position: absolute; 
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    background-color: #404bbf; 
+    border-radius: 2px; 
 }
 .contact-ul{
     display: flex;
